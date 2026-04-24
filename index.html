@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced AI Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+<h2>⚡ Advanced Calculator</h2>
+
+<input id="display" readonly>
+
+<div class="buttons">
+<button onclick="clearDisplay()">C</button>
+<button onclick="percent()">%</button>
+<button onclick="deleteLast()">⌫</button>
+<button onclick="append('/')">÷</button>
+
+<button onclick="append('7')">7</button>
+<button onclick="append('8')">8</button>
+<button onclick="append('9')">9</button>
+<button onclick="append('*')">×</button>
+
+<button onclick="append('4')">4</button>
+<button onclick="append('5')">5</button>
+<button onclick="append('6')">6</button>
+<button onclick="append('-')">-</button>
+
+<button onclick="append('1')">1</button>
+<button onclick="append('2')">2</button>
+<button onclick="append('3')">3</button>
+<button onclick="append('+')">+</button>
+
+<button onclick="append('0')">0</button>
+<button onclick="append('.')">.</button>
+<button onclick="calculate()">=</button>
+</div>
+
+<!-- Scientific -->
+<div class="science">
+<button onclick="scientific('Math.sqrt(')">√</button>
+<button onclick="scientific('Math.pow(')">xʸ</button>
+<button onclick="scientific('Math.sin(')">sin</button>
+<button onclick="scientific('Math.cos(')">cos</button>
+<button onclick="scientific('Math.log(')">log</button>
+</div>
+
+<!-- Graph -->
+<h3>📊 Graph</h3>
+<input id="graphInput" placeholder="e.g. x*x">
+<button onclick="drawGraph()">Draw</button>
+<canvas id="chart"></canvas>
+
+<!-- EMI -->
+<h3>💰 EMI</h3>
+<input id="loan" placeholder="Loan">
+<input id="rate" placeholder="Rate %">
+<input id="time" placeholder="Years">
+<button onclick="calcEMI()">Calculate</button>
+<p id="emi"></p>
+
+<!-- History -->
+<h3>📜 History</h3>
+<div id="history"></div>
+
+<!-- Theme -->
+<h3>🎨 Theme</h3>
+<button onclick="setTheme('neon')">Neon</button>
+<button onclick="setTheme('dark')">Dark</button>
+<button onclick="setTheme('light')">Light</button>
+
+<!-- About -->
+<h3>ℹ️ About</h3>
+<p>Made by Ishan ⚡</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

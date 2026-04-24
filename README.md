@@ -1,10 +1,8 @@
 # 🔥 Neon Calculator
 
 A powerful and modern calculator built using HTML, CSS, and JavaScript.
-
 ## 🚀 Live Demo
-https://ishandev.github.io/neon-calculator/
-
+https://ishandevv.github.io/neon-calculator/
 ## ✨ Features
 - Basic Calculator
 - Scientific Functions
